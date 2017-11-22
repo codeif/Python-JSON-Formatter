@@ -14,12 +14,16 @@ class JSONFormatter(_JSONFormatter):
         :param record: `LogRecord` we got from `JSONFormatter.format()`.
         :return: Dictionary which will be passed to JSON lib.
         """
+        print(record.__dict__)
         extra['message'] = message
-        if 'log_time' not in extra:
-            extra['log_time'] = datetime.utcnow()
+        if 'logcreated' not in extra:
+            extra['logcreated'] = record.created + 9 * 3600
 
-        if 'log_name' not in extra:
-            extra['log_name'] = record.name
+        if 'logname' not in extra:
+            extra['logname'] = record.name
+
+        if 'levelname' not in extra:
+            extra['levelname'] = record.levelname
 
         if record.exc_info:
             extra['exc_info'] = self.formatException(record.exc_info)
