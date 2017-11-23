@@ -15,7 +15,7 @@ class JSONFormatter(_JSONFormatter):
         :return: Dictionary which will be passed to JSON lib.
         """
         print(record.__dict__)
-        extra['message'] = message
+        extra['msg'] = message
         if 'logcreated' not in extra:
             extra['logcreated'] = record.created + 9 * 3600
 
