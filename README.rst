@@ -5,6 +5,17 @@ A log formatter for python logging. Based on https://github.com/marselester/json
 
 做了如下更改: message改为logmsg字段, 额外添加了logcreated, logname, loglevel字段
 
+安装
+----
+
+使用pip安装::
+
+    pip install Python-JSON-Formatter
+
+
+使用
+----
+
 例如下面的代码::
 
     logger = logging.getLogger('test')

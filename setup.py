@@ -8,7 +8,7 @@ with open('README.rst') as f:
 
 setup(
     name='Python-JSON-Formatter',
-    version='0.0.6',
+    version='0.1.0',
     description='A log formatter for python logging.',
     long_description=readme,
     author='codeif',
