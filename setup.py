@@ -2,13 +2,13 @@
 from setuptools import setup, find_packages
 
 
-with open('README.rst') as f:
+with open('README.rst', encoding='utf-8') as f:
     readme = f.read()
 
 
 setup(
     name='Python-JSON-Formatter',
-    version='0.1.0',
+    version='0.1.1',
     description='A log formatter for python logging.',
     long_description=readme,
     author='codeif',

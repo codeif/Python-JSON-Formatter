@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from datetime import datetime
 from json_log_formatter import JSONFormatter as _JSONFormatter
 
 
